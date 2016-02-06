@@ -12,13 +12,14 @@
 </head>
 <body>
 
-	<div class="mainContainer" ng-app="">
+	<div class="mainContainer" ng-app="myApp">
 		<h1>Features</h1>
 		<h2>Sin Errores</h2>
-        <input type="text" ng-model="data.label">
-        <input type="text" ng-model="data.class"/>
-        <button class="{{data.class}}">{{data.label}}</button>
-
+        <div ng-controller="mainController">
+            <input type="text" ng-model="data.label">
+            <input type="text" ng-model="data.class"/>
+            <button class="{{data.class}}">{{data.label}}</button>
+        </div>
 
 		
 	</div>
