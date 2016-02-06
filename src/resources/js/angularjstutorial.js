@@ -1,4 +1,5 @@
 /* use strict */
+<<<<<<< HEAD
 var app = angular.module('MyApp', [])
 app.controller('MainController', function ($scope)
 {
@@ -90,3 +91,12 @@ app.controller('MainController', function ($scope)
 		}
 	}
 })
+=======
+var app = angular.module('MyApp', []);
+app.controller("MainCtrl", function ($scope)
+{
+	$scope.data = {
+		label: "My Button 2"
+	};
+});
+>>>>>>> f98824c0d1a152dba134a4ff5f4ba7685116724f

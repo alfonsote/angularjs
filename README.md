@@ -12,6 +12,7 @@ It is an MVC (Model-View-Controller) framework so a brief understanding of MVC i
 ## Course Videos ##
 1. [Setting up AngularJS Workspace](https://www.youtube.com/watch?v=ofASsumsf7E "Setting up AngularJS Workspace on YouTube")
 2. [Simple Data Binding with AngularJS](https://www.youtube.com/watch?v=ia_vAGm_PCQ "Simple Data Binding with AngularJS")
+<<<<<<< HEAD
 3. [An Introduction to Controllers](https://www.youtube.com/watch?v=IGy2c-XwXgI "An Introduction to Controllers")
 4. [Writing Our First Directive](http://youtu.be/QwaVgz-GSXY "Writing our First Directive")
 5. [Scope, Element and Attributes](http://youtu.be/utKtjxLako4 "Scope, Element and Attributes")
@@ -45,3 +46,6 @@ It is an MVC (Model-View-Controller) framework so a brief understanding of MVC i
 33. [Using Compile to Change Content](https://www.youtube.com/watch?v=Ob9E1-TFUBs "Using Compile to Change Content")
 34. [Starting Our Webpage Contact Form](http://youtu.be/L34s4xwBvwE "Starting Our Webpage Contact Form")
 35. [Styling Our Contact Form](https://www.youtube.com/watch?v=INuhVedMnso "Styling Our Contact Form")
+=======
+3. [An Introduction to Controllers](https://www.youtube.com/watch?v=IGy2c-XwXgI "An Introduction to Controllers")
+>>>>>>> f98824c0d1a152dba134a4ff5f4ba7685116724f
