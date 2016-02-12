@@ -36,4 +36,63 @@ app.directive('anasol', function(){
             })
         }
     }
+});
+
+//directive to directive
+//https://www.youtube.com/watch?v=aG8VD0KvUw4&list=PLEDbaVSIL58MB78qU6_I_FZZgNe_Mcb5j&index=7
+app.controller('shieldCtrl', function($scope){
+    $scope.shieldNames =[];
+    this.addMel = function()
+    {
+        $scope.shieldNames.push('mel se metera aqui')
+    }
+    this.addCarmen = function()
+    {
+        $scope.shieldNames.push('carmen se metera aqui')
+    }
+    this.addNat = function()
+    {
+        $scope.shieldNames.push('nat se metera aqui')
+    }
+})
+.directive('theshield', function(){
+    return{
+        scope:{}, //con esta lina evito que cada vez que haga hover se sobreescriba el valor del array
+        restrict: 'E',
+        controller: 'shieldCtrl',
+        link: function(scope, element, attrs)
+        {
+            element.bind('mouseenter',function()
+            {
+                console.log(scope.shieldNames)
+            });
+        }
+    }
+})
+.directive('mel', function(){
+    return{
+        require: 'theshield',
+        link: function(scope, element, attrs, shieldCtrl){
+            shieldCtrl.addMel();
+        }
+    }
+
+})
+.directive('carmen', function(){
+    return{
+        require: 'theshield',
+        link: function(scope, element, attrs, shieldCtrl){
+            shieldCtrl.addCarmen();
+        }
+    }
+
+})
+.directive('nat', function(){
+    return{
+        require: 'theshield',
+        link: function(scope, element, attrs, shieldCtrl){
+            shieldCtrl.addNat();
+        }
+    }
+
 })
